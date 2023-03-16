@@ -1,9 +1,9 @@
 package com.vishwas.design.principle.dependencyinversion;
 
-public class MainExecutor {
+public class App {
 
     public static void main(String[] args) {
-        IDemo demo = new Demo();
-        System.out.println(demo.test());
+       Payment p = new Payment ( new Payoneer());
+       p.makePayment();
     }
 }
